@@ -45,7 +45,7 @@ header {
     max-width: 570px;
 }
 
-.hero .content{
+.content{
     gap: 25px;
     display: flex;
     flex-flow: column wrap;
@@ -53,14 +53,14 @@ header {
     align-items: start; 
 }
 
-.hero h1{
+h1{
     font-family: "Poppins", serif;
     font-weight: 600;
     font-size: 2.5rem;
     max-width: 20ch;
 }
 
-.hero p{
+p{
     font-weight: 400;
     font-size: 1rem;
     max-width: 60ch;
@@ -123,6 +123,7 @@ footer a i{
     #logoHdr{
         margin-left: 0px;
     }
+
 }
 
 @media(max-width: 1000px){
@@ -132,15 +133,24 @@ footer a i{
         margin-top: 2.5rem;
     }
 
+    footer {
+        margin: 0 auto;
+        padding: 0 30px;
+     }
+
     .hero{
         flex-direction: column;
     }
 
-    .hero .content{
+    .content{
         align-items: center;
         text-align: center;
         gap: 25px;
         margin-bottom: 30px;
+    }
+
+    #logoHdr{
+        margin-left: -25px;
     }
 }
 
